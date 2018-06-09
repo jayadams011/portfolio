@@ -28,8 +28,10 @@ a img {
   margin: 0 auto;
 }
 
-.right {
-  float: right;
+.midle {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
 }
 
 #header {
@@ -232,7 +234,7 @@ img.icon:hover {
   height: auto;
   margin-top: -30px;
   text-align: center;
-  padding: 60px 0 60px 0;
+  padding: 60px 0 0 0;
   font-size: 26px;
   line-height: 40px;
 }
@@ -274,6 +276,7 @@ img.icon:hover {
 
 #footer{
   background: #fafafa;
+  display: block;
   min-height: 50px;
   text-align: left;
   color: #b1b1b1;
