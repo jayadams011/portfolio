@@ -10,6 +10,7 @@ $('#toc').fixedTOC({
   topLinkWorks: true
 });
 
+
 $(document).ready(function() {
   $('.image-popup-no-margins').magnificPopup({
     type: 'image',
