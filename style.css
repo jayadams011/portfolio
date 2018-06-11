@@ -33,7 +33,7 @@ a img {
 }
 
 #work_expirience {
-  margin-top: 10px; 
+  margin-bottom: 30px; 
 }
 
 #header {
@@ -58,9 +58,7 @@ a img {
 .name {z-index: 88888;}
 
 #illustration {
-  background-color: #4C5364;
-/*  background-color: #495266; gray blue*/
-/*  background-color: #464C57; light gray blue*/
+  background-color: #;
   width: 100%;
   padding-bottom: 50px;
   text-align: right;
@@ -104,14 +102,12 @@ a img {
 }
 
 #about {
-/*  background-color: #D57878;*/
   background-color: #C26868;
   height: 1020px;
   margin-top:-30px;
 }
 
 #code {
-/*  margin-top:150px;*/
   border-radius: 5px;
   width:750px;
   margin: 0 auto;
@@ -198,7 +194,6 @@ span.answer {
   height: auto;
   margin-top: -30px;
   padding-top: 60px;
-/*  //font-family: 'Karla';*/
   font-size: 19px;
   line-height: 34px;
   -webkit-font-smoothing: antialiased;
@@ -224,8 +219,8 @@ img.icon {
   opacity: 0.8;
   z-index: 0;
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);   /*For Webkit browsers */
-  filter: gray;  /* For IE 6 - 9 */
+  -webkit-filter: grayscale(100%); 
+  filter: gray; 
   -webkit-transition: all .4s ease;
 }
 
@@ -284,7 +279,6 @@ img.icon:hover {
 
 .portfolio-big {
   width: 95%;
- /* height: 680px;*/
 }
 
 #footer{
@@ -310,18 +304,12 @@ img.icon:hover {
 
 .toc-holder {
   text-align: right;
-/*  //min-width: 60px;*/
   z-index: 30000;
 
 }
 
 .toc-holder a {
   text-decoration: none;
-/*  -webkit-transition: all .7s ease;
-  -moz-transition: all .7s ease;
-  -o-transition: all .7s ease;
-  -ms-transition: all .7s ease;
-  transition: all .7s ease;*/
 }
 
 .toc-holder li li a {
@@ -334,7 +322,7 @@ img.icon:hover {
 
 .toc-holder li a:hover {
   color: #000;
-/*  padding-left: 35px;*/
+
 }
 
 .toc-holder li li a:hover {
