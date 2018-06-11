@@ -28,10 +28,12 @@ a img {
   margin: 0 auto;
 }
 
-.midle {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
+.right {
+  float: right;
+}
+
+#work_expirience {
+  margin-top: 10px; 
 }
 
 #header {
@@ -68,6 +70,10 @@ a img {
   padding-top: 150px;
   width: 50%;
   min-width:800px;
+}
+.left-box, .rigth-box {
+  display: inline-block;
+  width: 50%;
 }
 
 #illustration p {
@@ -234,27 +240,34 @@ img.icon:hover {
   height: auto;
   margin-top: -30px;
   text-align: center;
-  padding: 60px 0 0 0;
+  padding: 60px 0 60px 0;
   font-size: 26px;
   line-height: 40px;
 }
 
 .row {
   clear: both;
+  display: block;
+  width: 100%;
 }
 
+.row .portfolio-thumb {
+  display: inline-block;
+}
+.clear {
+  display: block;
+  margin: 20px 0;
+}
 .portfolio-thumb {
   width: 45%;
   margin: 20px;
   background-color: white;
-  /* display: inline-block; */
-  float: left;
-  height: 350px;
+  display: inline-block;
+  height:400px;
 }
 
 .portfolio-thumb img {
   width: 100%;
-  height: 200px;
 }
 
 .portfolio-thumb p {
@@ -276,7 +289,6 @@ img.icon:hover {
 
 #footer{
   background: #fafafa;
-  display: block;
   min-height: 50px;
   text-align: left;
   color: #b1b1b1;
@@ -422,6 +434,55 @@ ul.toc {
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+ 
+ input, textarea {
+    border:0; outline:0;
+    padding: 1em;
+    @include border-radius(8px);
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    resize: none;
+   
+   &:focus {
+      @include box-shadow(0 0px 2px rgba($red, 1)!important);
+   }
+ }
+ 
+ #input-submit {
+    color: white; 
+    background: $red;
+    cursor: pointer;
+   
+   &:hover {
+      @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+   }
+ }
+ 
+ textarea {
+     height: 126px;
+ }
+}
+
+
+.half {
+ float: left;
+ width: 48%;
+ margin-bottom: 1em;
+}
+
+.right-b { width: 50%; }
+
+.left {
+    margin-right: 2%; 
 }
 
 @media screen and (max-width:860px) {
@@ -620,4 +681,22 @@ ul.toc {
   #code {
     margin-bottom: 20px;
   }
+  .half {
+    width: 100%; 
+    float: none;
+    margin-bottom: 0; 
+ }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+   content: " "; /* 1 */
+   display: table; /* 2 */
+}
+
+.cf:after {
+   clear: both;
+}
 }
