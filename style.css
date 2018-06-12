@@ -382,7 +382,7 @@ a.toc-link:hover {
   position: absolute;
   z-index: 10;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.9;
   right:0px;
   background: #fafafa;
   width: auto;
